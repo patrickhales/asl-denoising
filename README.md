@@ -30,6 +30,7 @@ dae.applyModel()  # apply the DAE model to the raw data
 dae.showSlice()   # show an example raw/denoised imaging slice side-by-side
 dae.saveResults() # saves the denoised dataset
 ```
+
 Details of the DAE model class are given below (these can be accessed using help(Dae)):
 
     Attributes
