@@ -22,13 +22,21 @@ This project was created with:
 The full list of requirements are given in requirements.txt, as part of this package
 
 ## Usage
-Example usage of the DAE model class is as follows (using default settings):
+Example usage of the DAE model class is as follows (all arguments are optional, without which defaults will be applied):
 ```
 from asl_denoising import Dae
-dae = Dae()       # creates the DAE object, containing the default raw dataset, and info about the trained DAE model
-dae.applyModel()  # apply the DAE model to the raw data
-dae.showSlice()   # show an example raw/denoised imaging slice side-by-side
-dae.saveResults() # saves the denoised dataset
+
+# create the DAE object: 
+dae = Dae(dMRawFile=<path to raw dM dataset>, modelFile=<path to h5 model file>, modelMetaData=<path to modelMetaData file>)       
+
+# apply the DAE model to the raw data:
+dae.applyModel()  
+
+# show an example raw/denoised imaging slice side-by-side:
+dae.showSlice(slice=<slice no.>)
+
+# save the denoised dataset as a new nifti file:
+dae.saveResults(saveFile=<path to nifti file for saving denoised dataset>) 
 ```
 
 Details of the DAE model class are given below (these can be accessed using help(Dae)):
