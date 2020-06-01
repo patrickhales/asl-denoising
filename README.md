@@ -16,11 +16,16 @@ Model architecture:
 **Figure 1**. Architecture of the denoising auto-encoder model, with an example low-SNR, single repetition dMraw image (left), and the corresponding high-SNR dMmean image (right; same axial slice averaged over 10 repetitions).  Image dimensions are shown for each step, along with the number of filter layers used. Skip connections are illustrated as horizontal lines, convolution operations (with subsequent ReLU activation) as green arrows, and max-pooling / up-sampling operations as red / purple arrows respectively. 
 
 ## Package Contents
-* AslDenoising.py:              code needed to implement the DAE on raw ASL difference images (referred to as dM images - can be 2D, 3D or 4D)
-* DAE.py:                       code for creating the DAE model in Keras
-* DaeTrainedModel.h5            the trained DAE model (this is implemented when using AslDenoising.py)
-* DaeTrainedModelMetaData.pkl   the meta-data for the trained model 
-* dMRaw.nii.gz                  example nifti file containing raw dM images
+* AslDenoising.py
+  * code needed to implement the DAE on raw ASL difference images (referred to as dM images - can be 2D, 3D or 4D)
+* DAE.py:                       
+  * code for creating the DAE model in Keras
+* DaeTrainedModel.h5            
+  * the trained DAE model (this is implemented when using AslDenoising.py)
+* DaeTrainedModelMetaData.pkl   
+  * the meta-data for the trained model 
+* dMRaw.nii.gz                  
+  * example nifti file containing raw dM images
 
 ## Required Modules
 * numpy
