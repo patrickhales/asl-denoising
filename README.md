@@ -8,7 +8,7 @@
 * [Usage](#usage)
 
 ## General info
-This repository contains the Python code needed to create the denoising autoencoder (DAE) model described in "*Combined Denoising and Suppression of Transient Artefacts in Arterial Spin Labelling MRI Using Deep Learning*" by Hales *et al., JMRI (in-press)* 
+This repository contains the Python code needed to create the denoising autoencoder (DAE) model described in "*Combined Denoising and Suppression of Transient Artefacts in Arterial Spin Labelling MRI Using Deep Learning*" by Hales *et al.*, JMRI (DOI: 10.1002/(ISSN)1522-2586) 
 
 Model architecture:
 ![image](https://user-images.githubusercontent.com/24695126/77834561-882fd000-713d-11ea-8ada-b4eef7958751.png)
